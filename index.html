@@ -115,10 +115,73 @@
     </tbody>
   </table>
 
-  <h3>Conclusión</h3>
-  <p style="max-width: 700px; margin: 1em auto; font-size: 1.1em; line-height: 1.5;">
-    En este análisis, ambos métodos numéricos, Heun y Runge-Kutta de 4to orden, proporcionan soluciones similares para el problema planteado, con pequeñas diferencias que se observan en los valores numéricos. El método Runge-Kutta 4, al ser de mayor orden, tiende a ofrecer una mayor precisión, aunque a un costo computacional ligeramente superior. La elección del método dependerá de la precisión requerida y los recursos disponibles. En general, ambos métodos son útiles para resolver ecuaciones diferenciales en modelos de crecimiento o dinámica de sistemas físicos.
-  </p>
+  <!-- Tabla Comparativa y Conclusiones con fondo blanco -->
+<div class="container mt-5 bg-white p-4 rounded shadow">
+    <h3 class="text-center">Tabla Comparativa de los Métodos</h3>
+    <table class="table table-bordered table-striped mt-3 bg-white">
+        <thead class="table-dark">
+            <tr>
+                <th>Criterio</th>
+                <th>Método de Heun</th>
+                <th>Método de Runge-Kutta 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Orden del método</td>
+                <td>2° orden</td>
+                <td>4° orden</td>
+            </tr>
+            <tr>
+                <td>Precisión</td>
+                <td>Menor precisión</td>
+                <td>Mayor precisión</td>
+            </tr>
+            <tr>
+                <td>Complejidad computacional</td>
+                <td>Baja</td>
+                <td>Moderada</td>
+            </tr>
+            <tr>
+                <td>Velocidad de cálculo</td>
+                <td>Más rápido</td>
+                <td>Más lento que Heun</td>
+            </tr>
+            <tr>
+                <td>Estabilidad</td>
+                <td>Menor en largos intervalos</td>
+                <td>Mayor estabilidad</td>
+            </tr>
+            <tr>
+                <td>Resultado para N(20) aprox.</td>
+                <td>Suele ser menor</td>
+                <td>Más cercano al valor real</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="container mt-5 bg-white p-4 rounded shadow">
+    <h3 class="text-center">Conclusiones</h3>
+    <ul class="list-group list-group-flush bg-white">
+        <li class="list-group-item bg-white">
+            El problema del crecimiento tumoral fue modelado con una EDO no lineal que representa crecimiento logístico.
+        </li>
+        <li class="list-group-item bg-white">
+            Ambos métodos permitieron obtener una aproximación de la solución en el intervalo de tiempo definido.
+        </li>
+        <li class="list-group-item bg-white">
+            Runge-Kutta presentó mayor precisión y estabilidad, ideal para aplicaciones críticas.
+        </li>
+        <li class="list-group-item bg-white">
+            Heun, siendo más sencillo y rápido, es útil para estimaciones rápidas o recursos limitados.
+        </li>
+        <li class="list-group-item bg-white">
+            La elección del método depende del equilibrio entre exactitud y eficiencia computacional.
+        </li>
+    </ul>
+</div>
+
         </div>
         <div class="fooder">
             <div class="btn-group">
