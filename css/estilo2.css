@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.contener .header 
+{ 
+    background-color: rgb(182, 6, 6) ; 
+    grid-area: header; 
+    text-decoration-color: blanchedalmond;
+    border-radius: 15px;
+}
+.contener {
+    margin: 15px;
+}
+
+.header {
+    color: white;
+}
+
+.nav {
+    margin-top: 10px;
+}
+
+/* Contenedor flex para contenido y gráfico lado a lado */
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ambos contenedores ocupan igual ancho */
+.contenido,
+.ads {
+    flex: 1;
+    border-radius: 15px;
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 520px;
+}
+
+.contenido {
+    background-color: rgb(0, 195, 192);
+    color: black;
+}
+
+.ads {
+    background-color: rgb(108, 255, 111);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ajuste canvas para que ocupe todo el ancho del contenedor y altura fija */
+#chart {
+    width: 100% !important;
+    height: 480px !important;
+}
